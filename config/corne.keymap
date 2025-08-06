@@ -58,8 +58,8 @@
        	math_layer {
 			bindings = <
 
-	&GRAVE		&kp N1		&kp N2		&kp N3		&kp N4		&kp N5					&kp N6		&kp N7		&kp N8		&kp N9		&kp N0		&BSLH
-	&trans		&kp SPC	    &kp LBKT	&kp MINUS	&kp PLUS	&kp LBRC				&kp none	&kp BSLH	&kp LBKT	&kp RBKT 	&kp trans	&trans
+	&kp GRAVE	&kp N1		&kp N2		&kp N3		&kp N4		&kp N5					&kp N6		&kp N7		&kp N8		&kp N9		&kp N0		&kp BSLH
+	&trans		&kp SPC	    &kp LBKT	&kp MINUS	&kp PLUS	&kp LBRC				&none	&kp BSLH	&kp LBKT	&kp RBKT 	&kp trans	&trans
 	&trans		&trans      &kp GRAVE	&kp UNDER	&kp EQUAL	&none					&none		&EQUAL		&kp COMMA	&kp DOT		&kp FSLH	&none
 								            &trans		&trans		&trans			&trans		&trans		&trans
 
