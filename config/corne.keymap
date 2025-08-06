@@ -86,9 +86,8 @@
     		                                &trans		&trans		&trans			&trans		&trans		&trans
 
                     >;
-    };
-
-/*
+        };
+        /*
 
         lower_layer {
 // -----------------------------------------------------------------------------------------
@@ -117,7 +116,8 @@
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                 >;
         };
-    };
 
-*/
+
+        */
+    };
 };
