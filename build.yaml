@@ -23,5 +23,7 @@ include:
     shield: corne_left
   - board: nice_nano_v2
     shield: corne_right
-  - board: nice_nano_v2
-    shield: settings_reset
+# uncomment to build the reset. Usefull if a board was used for something else
+#   (e.g. it was paired with a different board previously)
+# - board: nice_nano_v2
+#   shield: settings_reset
