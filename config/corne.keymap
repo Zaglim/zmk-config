@@ -36,7 +36,7 @@
         combo_TO_BASE_LAYER {
             timeout-ms = <50>;
             key-positions = <9 10>; // above resting right pinky and ring finger
-            bindings = <&tl BASE>;
+            bindings = <&to BASE>;
         };
         combo_TO_MATH_LAYER {
             timeout-ms = <50>;
