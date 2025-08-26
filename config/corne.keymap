@@ -49,12 +49,12 @@
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            label = "BS Del";
+            label = "bspc but del when shifted";
         };
 
         under_space: under_space {
             compatible = "zmk,behavior-mod-morph";
-            label = "UNDER_SPACE";
+            label = "space but _ when shifted";
             bindings = <&kp SPACE>, <&kp UNDERSCORE>;
 
             #binding-cells = <0>;
@@ -73,7 +73,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E      &kp R         &kp T       &kp Y       &kp U  &kp I      &kp O    &kp P     &sl FUNC
+&kp TAB    &kp Q  &kp W  &kp E      &kp R         &kp T       &kp Y       &kp U  &kp I      &kp O    &kp P     &sl 3
 &bspc_del  &kp A  &kp S  &kp D      &kp F         &kp G       &kp H       &kp J  &kp K      &kp L    &kp SEMI  &kp SINGLE_QUOTE
 &kp LALT   &kp Z  &kp X  &kp C      &kp V         &kp B       &kp N       &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RALT
                          &kp LCTRL  &under_space  &kp LGUI    &kp RSHIFT  &mo 1  &mo 2
@@ -82,10 +82,10 @@
 
         math_layer {
             bindings = <
-&kp GRAVE  &kp N1   &kp N2     &kp N3     &kp N4     &kp N5      &kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &kp BSLH
-&trans     &kp SPC  &kp LBKT   &kp MINUS  &kp PLUS   &kp LBRC    &none   &kp BSLH   &kp LBKT   &kp RBKT  &trans    &trans
-&trans     &trans   &kp GRAVE  &kp UNDER  &kp EQUAL  &none       &none   &kp EQUAL  &kp COMMA  &kp DOT   &kp FSLH  &trans
-                               &trans     &trans     &trans      &trans  &trans     &trans
+&trans  &kp N1  &kp N2     &kp N3     &kp N4     &kp N5      &kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &kp BSLH
+&trans  &none   &kp LBKT   &kp MINUS  &kp PLUS   &kp LBRC    &none   &kp BSLH   &kp LBKT   &kp RBKT  &trans    &trans
+&trans  &none   &kp GRAVE  &kp UNDER  &kp EQUAL  &none       &none   &kp EQUAL  &kp COMMA  &kp DOT   &kp FSLH  &trans
+                           &trans     &trans     &trans      &trans  &trans     &trans
             >;
 
             label = "Math";
@@ -93,19 +93,19 @@
 
         navigation_layer {
             bindings = <
-&none   &none         &none         &none       &none        &none     &none     &none     &kp UP    &none      &none    &none
+&trans  &none         &none         &none       &none        &none     &none     &none     &kp UP    &none      &none    &none
 &trans  &none         &none         &none       &none        &none     &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp END  &none
-&none   &kp C_VOL_DN  &kp C_VOL_UP  &kp K_COPY  &kp K_PASTE  &none     &none     &none     &none     &none      &none    &none
+&trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_COPY  &kp K_PASTE  &none     &none     &none     &none     &none      &none    &none
                                     &trans      &trans       &trans    &trans    &trans    &trans
             >;
         };
 
         function_layer {
             bindings = <
-&none   &kp F1   &kp F2   &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none
-&trans  &kp F11  &kp F12  &none   &none   &none     &none   &none   &none   &none   &none    &none
-&none   &none    &none    &none   &none   &none     &none   &none   &none   &none   &none    &none
-                          &trans  &trans  &trans    &trans  &trans  &trans
+&none  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none
+&none  &kp F11  &kp F12  &none   &none   &none     &none   &none   &none   &none   &none    &none
+&none  &none    &none    &none   &none   &none     &none   &none   &none   &none   &none    &none
+                         &none   &none   &none     &none   &none   &none
             >;
         };
 
