@@ -82,10 +82,10 @@
 
         math_layer {
             bindings = <
-&trans  &kp N1  &kp N2     &kp N3     &kp N4     &kp N5      &kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &kp BSLH
-&trans  &none   &kp LBKT   &kp MINUS  &kp PLUS   &kp LBRC    &none   &kp BSLH   &kp LBKT   &kp RBKT  &trans    &trans
-&trans  &none   &kp GRAVE  &kp UNDER  &kp EQUAL  &none       &none   &kp EQUAL  &kp COMMA  &kp DOT   &kp FSLH  &trans
-                           &trans     &trans     &trans      &trans  &trans     &trans
+&trans  &kp N1  &kp N2     &kp N3     &kp N4     &kp N5      &kp N6           &kp N7     &kp N8     &kp N9    &kp N0    &kp BSLH
+&trans  &none   &kp LBKT   &kp MINUS  &kp PLUS   &kp LBRC    &kp RIGHT_BRACE  &kp BSLH   &kp LBKT   &kp RBKT  &trans    &trans
+&trans  &none   &kp GRAVE  &kp UNDER  &kp EQUAL  &none       &none            &kp EQUAL  &kp COMMA  &kp DOT   &kp FSLH  &trans
+                           &trans     &trans     &trans      &trans           &trans     &trans
             >;
 
             label = "Math";
