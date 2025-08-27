@@ -73,19 +73,19 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W        &kp E           &kp R           &kp T       &kp Y       &kp U           &kp I           &kp O        &kp P     &sl 3
-&bspc_del  &kp A  &mt LCTRL S  &mt LEFT_ALT D  &mt LEFT_GUI F  &kp G       &kp H       &mt LEFT_GUI J  &mt LEFT_ALT K  &mt LCTRL L  &kp SEMI  &kp SINGLE_QUOTE
-&kp LALT   &kp Z  &kp X        &kp C           &kp V           &kp B       &kp N       &kp M           &kp COMMA       &kp DOT      &kp FSLH  &kp RALT
-                               &kp LCTRL       &under_space    &kp LGUI    &kp RSHIFT  &mo 1           &mo 2
+&kp TAB    &kp Q         &kp W        &kp E           &kp R           &kp T        &kp Y  &kp U           &kp I           &kp O        &kp P            &sl 3
+&bspc_del  &mt LSHIFT A  &mt LCTRL S  &mt LEFT_ALT D  &mt LEFT_GUI F  &kp G        &kp H  &mt LEFT_GUI J  &mt LEFT_ALT K  &mt LCTRL L  &mt LSHIFT SEMI  &kp SINGLE_QUOTE
+&kp LALT   &kp Z         &kp X        &kp C           &kp V           &kp B        &kp N  &kp M           &kp COMMA       &kp DOT      &kp FSLH         &kp RALT
+                                      &mo 1           &kp LEFT_SHIFT  &kp ENTER    &none  &under_space    &mo 2
             >;
         };
 
         math_layer {
             bindings = <
-&trans  &kp N1  &kp N2     &kp N3     &kp N4     &kp N5      &kp N6           &kp N7     &kp N8     &kp N9    &kp N0    &kp BSLH
-&trans  &none   &kp LBKT   &kp MINUS  &kp PLUS   &kp LBRC    &kp RIGHT_BRACE  &kp BSLH   &kp LBKT   &kp RBKT  &trans    &trans
-&trans  &none   &kp GRAVE  &kp UNDER  &kp EQUAL  &none       &none            &kp EQUAL  &kp COMMA  &kp DOT   &kp FSLH  &trans
-                           &trans     &trans     &trans      &trans           &trans     &trans
+&trans  &kp N1                &kp N2                  &kp N3              &kp N4             &kp N5      &kp N6           &kp N7         &kp N8             &kp N9                   &kp N0                 &kp BSLH
+&trans  &kp LEFT_PARENTHESIS  &mt LCTRL LEFT_BRACKET  &mt LEFT_ALT MINUS  &mt LEFT_GUI PLUS  &kp LBRC    &kp RIGHT_BRACE  &mt LGUI BSLH  &mt LEFT_ALT LBKT  &mt LCTRL RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans
+&trans  &none                 &kp GRAVE               &kp UNDER           &kp EQUAL          &none       &none            &kp EQUAL      &kp COMMA          &kp DOT                  &kp FSLH               &trans
+                                                      &trans              &trans             &trans      &trans           &trans         &trans
             >;
 
             label = "Math";
@@ -94,7 +94,7 @@
         navigation_layer {
             bindings = <
 &trans  &none         &none         &none       &none        &none     &none     &kp PAGE_UP    &kp UP    &none      &none    &none
-&trans  &none         &none         &none       &none        &none     &kp HOME  &kp LEFT       &kp DOWN  &kp RIGHT  &kp END  &none
+&trans  &trans        &trans        &trans      &trans       &none     &kp HOME  &kp LEFT       &kp DOWN  &kp RIGHT  &kp END  &none
 &trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_COPY  &kp K_PASTE  &none     &none     &kp PAGE_DOWN  &none     &none      &none    &none
                                     &trans      &trans       &trans    &trans    &trans         &trans
             >;
