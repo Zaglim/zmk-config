@@ -76,16 +76,16 @@
 &kp TAB    &kp Q         &kp W        &kp E           &kp R           &kp T        &kp Y  &kp U           &kp I           &kp O        &kp P            &sl 3
 &bspc_del  &mt LSHIFT A  &mt LCTRL S  &mt LEFT_ALT D  &mt LEFT_GUI F  &kp G        &kp H  &mt LEFT_GUI J  &mt LEFT_ALT K  &mt LCTRL L  &mt LSHIFT SEMI  &kp SINGLE_QUOTE
 &none      &kp Z         &kp X        &kp C           &kp V           &kp B        &kp N  &kp M           &kp COMMA       &kp DOT      &kp FSLH         &none
-                                      &mo 1           &mo 1           &kp ENTER    &none  &under_space    &mo 2
+                                      &none           &mo 1           &kp ENTER    &mo 2  &under_space    &none
             >;
         };
 
         math_layer {
             bindings = <
-&trans  &kp N1                &kp N2                  &kp N3              &kp N4             &kp N5      &kp N6           &kp N7         &kp N8             &kp N9                   &kp N0                 &kp BSLH
-&trans  &kp LEFT_PARENTHESIS  &mt LCTRL LEFT_BRACKET  &mt LEFT_ALT MINUS  &mt LEFT_GUI PLUS  &kp LBRC    &kp RIGHT_BRACE  &mt LGUI BSLH  &mt LEFT_ALT LBKT  &mt LCTRL RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans
-&trans  &none                 &kp GRAVE               &kp UNDER           &kp EQUAL          &none       &none            &kp EQUAL      &kp COMMA          &kp DOT                  &kp FSLH               &trans
-                                                      &trans              &trans             &trans      &trans           &trans         &trans
+&trans  &kp N1                           &kp N2                  &kp N3              &kp N4             &kp N5      &kp N6           &kp N7         &kp N8             &kp N9                   &kp N0                        &kp BSLH
+&trans  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LCTRL LEFT_BRACKET  &mt LEFT_ALT MINUS  &mt LEFT_GUI PLUS  &kp LBRC    &kp RIGHT_BRACE  &mt LGUI BSLH  &mt LEFT_ALT LBKT  &mt LCTRL RIGHT_BRACKET  &mt LSHIFT RIGHT_PARENTHESIS  &trans
+&trans  &none                            &kp GRAVE               &kp UNDER           &kp EQUAL          &none       &none            &kp EQUAL      &kp COMMA          &kp DOT                  &kp FSLH                      &trans
+                                                                 &trans              &trans             &trans      &trans           &trans         &trans
             >;
 
             label = "Math";
