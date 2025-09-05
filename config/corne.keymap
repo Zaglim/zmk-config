@@ -6,15 +6,15 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
+
 /*
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
 #include <dt-bindings/zmk/pointing.h>
 */
-
 // Layer defines
+
 #define BASE 0
 #define MATH 1
 #define NAVI 2
@@ -22,27 +22,23 @@
 
 / {
     combos {
-  		compatible = "zmk,combos";
+        compatible = "zmk,combos";
 
         combo_ESC {
- 			timeout-ms = <50>;
- 			key-positions = <1 2>; // above resting left pinky and ring finger
- 			bindings = <&kp ESC>;
-       	};
+            timeout-ms = <50>;
+            key-positions = <1 2>; // above resting left pinky and ring finger
+            bindings = <&kp ESC>;
+        };
+
         combo_RETURN {
             timeout-ms = <50>;
             key-positions = <16 19>; // both resting index fingers (F && J)
             bindings = <&kp RETURN>;
         };
-        combo_TO_BASE_LAYER {
-            timeout-ms = <50>;
-            key-positions = <9 10>; // above resting right pinky and ring finger
-            bindings = <&to BASE>;
-        };
-        combo_TO_MATH_LAYER {
-            timeout-ms = <50>;
-            key-positions = <15 20>; // both resting middle fingers (D+K)
-            bindings = <&to MATH>;
+
+        base_layer {
+            bindings = <&to 0>;
+            key-positions = <9 10>;
         };
     };
 
@@ -51,7 +47,18 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "bspc but del when shifted";
+        };
+
+        under_space: under_space {
+            compatible = "zmk,behavior-mod-morph";
+            label = "space but _ when shifted";
+            bindings = <&kp SPACE>, <&kp UNDERSCORE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
         };
     };
 
@@ -66,48 +73,51 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-
-    &kp TAB     &kp Q       &kp W       &kp E       &kp R       &kp T                   &kp Y       &kp U       &kp I       &kp O       &kp P       &sl FUNC
-    &bspc_del   &kp A       &kp S       &kp D       &kp F       &kp G                   &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp SINGLE_QUOTE
-    &kp LALT    &kp Z       &kp X       &kp C       &kp V       &kp B                   &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RALT
-                                          &kp LCTRL     &kp LGUI    &kp LSHIFT       &kp SPC   &mo NAVI     &kp RALT
-
-                >;
+&kp TAB    &kp Q         &kp W        &kp E           &kp R           &kp T        &kp Y  &kp U           &kp I           &kp O        &kp P            &sl 3
+&bspc_del  &mt LSHIFT A  &mt LCTRL S  &mt LEFT_ALT D  &mt LEFT_GUI F  &kp G        &kp H  &mt LEFT_GUI J  &mt LEFT_ALT K  &mt LCTRL L  &mt LSHIFT SEMI  &kp SINGLE_QUOTE
+&none      &kp Z         &kp X        &kp C           &kp V           &kp B        &kp N  &kp M           &kp COMMA       &kp DOT      &kp FSLH         &none
+                                      &none           &mo 1           &kp ENTER    &mo 2  &under_space    &none
+            >;
         };
 
+        math_layer {
+            bindings = <
+&trans  &kp N1                           &kp N2                  &kp N3              &kp N4             &kp N5      &kp N6           &kp N7         &kp N8             &kp N9                   &kp N0                        &kp BSLH
+&trans  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LCTRL LEFT_BRACKET  &mt LEFT_ALT MINUS  &mt LEFT_GUI PLUS  &kp LBRC    &kp RIGHT_BRACE  &mt LGUI BSLH  &mt LEFT_ALT LBKT  &mt LCTRL RIGHT_BRACKET  &mt LSHIFT RIGHT_PARENTHESIS  &trans
+&trans  &none                            &kp GRAVE               &kp UNDER           &kp EQUAL          &none       &none            &kp EQUAL      &kp COMMA          &kp DOT                  &kp FSLH                      &trans
+                                                                 &trans              &trans             &trans      &trans           &trans         &trans
+            >;
 
-       	math_layer {
-			bindings = <
+            label = "Math";
+        };
 
-	&kp GRAVE	&kp N1		&kp N2		&kp N3		&kp N4		&kp N5					&kp N6		&kp N7		&kp N8		&kp N9		&kp N0		&kp BSLH
-	&trans		&kp SPC	    &kp LBKT	&kp MINUS	&kp PLUS	&kp LBRC				&none	    &kp BSLH	&kp LBKT	&kp RBKT 	&trans  	&trans
-	&trans		&trans      &kp GRAVE	&kp UNDER	&kp EQUAL  	&none					&none		&kp EQUAL	&kp COMMA	&kp DOT		&kp FSLH	&trans
-								            &trans		&trans		&trans			&trans		&trans		&trans
-
-                >;
-		};
-
-		navigation_layer {
-			bindings = <
-
-	&none	    &none       &none       &none       &none       &none			        &none   	&none	    &kp UP		&none      	&none   	&none
-	&trans	    &none       &none       &none	    &none	    &none			        &kp HOME	&kp LEFT	&kp DOWN	&kp RIGHT	&kp END		&none
-	&none	&kp C_VOL_DN	&kp C_VOL_UP &none		&none		&none			        &none		&none   	&none   	&none   	&none   	&none
-								             &trans		 &trans	    &trans          &trans		&trans		&trans
-
-			    >;
-		};
+        navigation_layer {
+            bindings = <
+&trans  &none         &none         &none       &none        &none     &none     &none     &kp UP    &none      &kp PG_UP      &none
+&trans  &trans        &trans        &trans      &trans       &none     &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp END        &none
+&trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_COPY  &kp K_PASTE  &none     &none     &none     &none     &none      &kp PAGE_DOWN  &none
+                                    &trans      &trans       &trans    &trans    &trans    &trans
+            >;
+        };
 
         function_layer {
             bindings = <
-
-    &none		&kp F1		&kp F2		&kp F3		&kp F4		&kp F5					&kp F6		&kp F7		&kp F8		&kp F9		&kp F10		&none
-    &trans		&kp F11		&kp F12		&none		&none		&none					&none		&none		&none		&none		&none		&none
-    &none		&none		&none		&none		&none		&none					&none		&none		&none		&none		&none		&none
-    		                                &trans		&trans		&trans			&trans		&trans		&trans
-
-                    >;
+&none  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5        &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none
+&none  &kp F11  &kp F12  &none   &none   &sys_reset    &none   &none   &none   &none   &none    &none
+&none  &none    &none    &none   &none   &none         &none   &none   &none   &none   &none    &none
+                         &none   &none   &none         &none   &none   &none
+            >;
         };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
         /*
 
         lower_layer {
