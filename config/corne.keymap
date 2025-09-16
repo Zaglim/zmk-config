@@ -40,6 +40,11 @@
             bindings = <&to 0>;
             key-positions = <9 10>;
         };
+
+        Pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <5 17>;
+        };
     };
 
     behaviors {
@@ -51,9 +56,11 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>; // List of keys on the left side of the keyboard
             hold-trigger-on-release;
         };
+
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -62,9 +69,11 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>; // List of keys on the right side of the keyboard
             hold-trigger-on-release;
         };
+
         bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -95,18 +104,18 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q         &kp W        &kp E           &kp R           &kp T        &kp Y  &kp U           &kp I           &kp O        &kp P            &sl 3
-&bspc_del  &hml LSHIFT A &hml LCTRL S &hml LEFT_ALT D &hml LEFT_GUI F &kp G        &kp H  &hmr LEFT_GUI J &hmr LEFT_ALT K &hmr LCTRL L &hmr LSHIFT SEMI &kp SINGLE_QUOTE
-&none      &kp Z         &kp X        &kp C           &kp V           &kp B        &kp N  &kp M           &kp COMMA       &kp DOT      &kp FSLH         &none
-                                      &none           &mo 1           &kp ENTER    &mo 2  &under_space    &none
+&kp TAB    &kp Q          &kp W         &kp E            &kp R            &kp T        &kp Y  &kp U            &kp I            &kp O         &kp P             &sl 3
+&bspc_del  &hml LSHIFT A  &hml LCTRL S  &hml LEFT_ALT D  &hml LEFT_GUI F  &kp G        &kp H  &hmr LEFT_GUI J  &hmr LEFT_ALT K  &hmr LCTRL L  &hmr LSHIFT SEMI  &kp SINGLE_QUOTE
+&kp GRAVE  &kp Z          &kp X         &kp C            &kp V            &kp B        &kp N  &kp M            &kp COMMA        &kp DOT       &kp FSLH          &none
+                                        &none            &mo 1            &kp ENTER    &mo 2  &under_space     &none
             >;
         };
 
         math_layer {
             bindings = <
-&trans  &kp N1                           &kp N2                  &kp N3              &kp N4             &kp N5      &kp N6           &kp N7         &kp N8             &kp N9                   &kp N0                        &kp BSLH
-&trans  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LCTRL LEFT_BRACKET  &mt LEFT_ALT MINUS  &mt LEFT_GUI PLUS  &kp LBRC    &kp RIGHT_BRACE  &mt LGUI BSLH  &mt LEFT_ALT LBKT  &mt LCTRL RIGHT_BRACKET  &mt LSHIFT RIGHT_PARENTHESIS  &trans
-&trans  &none                            &kp GRAVE               &kp UNDER           &kp EQUAL          &none       &none            &kp EQUAL      &kp COMMA          &kp DOT                  &kp FSLH                      &trans
+&trans  &kp N1                           &kp N2                  &kp N3              &kp N4             &kp N5      &kp N6           &kp N7         &kp N8             &kp N9          &kp N0                        &kp BSLH
+&trans  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LCTRL LEFT_BRACKET  &mt LEFT_ALT MINUS  &mt LEFT_GUI PLUS  &kp LBRC    &kp RIGHT_BRACE  &mt LGUI LPAR  &mt LEFT_ALT LBKT  &mt LCTRL LBRC  &mt LSHIFT RIGHT_PARENTHESIS  &trans
+&trans  &none                            &none                   &none               &none              &none       &kp MINUS        &kp EQUAL      &kp COMMA          &kp DOT         &kp FSLH                      &kp PLUS
                                                                  &trans              &trans             &trans      &trans           &trans         &trans
             >;
 
@@ -128,15 +137,6 @@
 &none  &kp F11  &kp F12  &none   &none   &sys_reset    &none   &none   &none   &none   &none    &none
 &none  &none    &none    &none   &none   &none         &none   &none   &none   &none   &none    &none
                          &none   &none   &none         &none   &none   &none
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
