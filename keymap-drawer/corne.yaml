@@ -40,7 +40,7 @@ layers:
   - ''
   - Math
   - ENTER
-  - navigation
+  - NAV
   - {t: SPACE, s: _}
   - ''
   Math:
@@ -57,16 +57,16 @@ layers:
   - '0'
   - \
   - {t: ▽, type: trans}
-  - {t: (, h: LEFT SHIFT}
+  - {t: (, h: LALT}
   - {t: '[', h: LCTRL}
-  - {t: '-', h: LEFT ALT}
+  - {t: '-', h: LSHIFT}
   - {t: +, h: LEFT GUI}
   - '{'
   - '}'
   - {t: (, h: LGUI}
-  - {t: '[', h: LEFT ALT}
+  - {t: '[', h: LSHIFT}
   - {t: '{', h: LCTRL}
-  - {t: ), h: LSHIFT}
+  - {t: ), h: LALT}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
@@ -86,7 +86,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  navigation:
+  NAV:
   - {t: ▽, type: trans}
   - ''
   - ''
@@ -177,5 +177,5 @@ combos:
   k: ESC
 - p: [9, 10]
   k: {t: default, h: toggle}
-- p: [5, 17]
+- p: [4, 16]
   k: '|'
