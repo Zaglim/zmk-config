@@ -37,7 +37,7 @@
 
         Pipe {
             bindings = <&kp PIPE>;
-            key-positions = <5 17>;
+            key-positions = <4 16>;
         };
     };
 
@@ -101,10 +101,10 @@
 
         math_layer {
             bindings = <
-&trans  &kp N1                           &kp N2                  &kp N3              &kp N4             &kp N5      &kp N6           &kp N7         &kp N8             &kp N9          &kp N0                        &kp BSLH
-&trans  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LCTRL LEFT_BRACKET  &mt LEFT_ALT MINUS  &mt LEFT_GUI PLUS  &kp LBRC    &kp RIGHT_BRACE  &mt LGUI LPAR  &mt LEFT_ALT LBKT  &mt LCTRL LBRC  &mt LSHIFT RIGHT_PARENTHESIS  &trans
-&trans  &none                            &none                   &none               &none              &none       &kp MINUS        &kp EQUAL      &kp COMMA          &kp DOT         &kp FSLH                      &kp PLUS
-                                                                 &trans              &trans             &trans      &trans           &trans         &trans
+&trans  &kp N1                     &kp N2                  &kp N3            &kp N4             &kp N5      &kp N6           &kp N7         &kp N8           &kp N9          &kp N0                      &kp BSLH
+&trans  &mt LALT LEFT_PARENTHESIS  &mt LCTRL LEFT_BRACKET  &mt LSHIFT MINUS  &mt LEFT_GUI PLUS  &kp LBRC    &kp RIGHT_BRACE  &mt LGUI LPAR  &mt LSHIFT LBKT  &mt LCTRL LBRC  &mt LALT RIGHT_PARENTHESIS  &trans
+&trans  &none                      &none                   &none             &none              &none       &kp MINUS        &kp EQUAL      &kp COMMA        &kp DOT         &kp FSLH                    &kp PLUS
+                                                           &trans            &trans             &trans      &trans           &trans         &trans
             >;
 
             label = "Math";
@@ -117,6 +117,8 @@
 &trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_COPY  &kp K_PASTE  &none     &none     &none     &none     &none      &kp PAGE_DOWN  &none
                                     &trans      &trans       &trans    &trans    &trans    &trans
             >;
+
+            label = "NAV";
         };
 
         function_layer {
