@@ -55,7 +55,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - \
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: (, h: LALT}
   - {t: '[', h: LCTRL}
@@ -179,3 +179,5 @@ combos:
   k: {t: default, h: toggle}
 - p: [4, 16]
   k: '|'
+- p: [26, 27, 28]
+  k: '&caps_word'
