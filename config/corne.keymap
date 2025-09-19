@@ -35,9 +35,14 @@
             key-positions = <9 10>;
         };
 
-        Pipe {
+        combo_Pipe {
             bindings = <&kp PIPE>;
             key-positions = <4 16>;
+        };
+
+        combo_cps_wrd {
+            bindings = <&caps_word>;
+            key-positions = <26 27 28>;
         };
     };
 
@@ -45,7 +50,7 @@
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
 
@@ -55,7 +60,7 @@
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
 
@@ -101,10 +106,10 @@
 
         math_layer {
             bindings = <
-&trans  &kp N1                     &kp N2                  &kp N3            &kp N4             &kp N5      &kp N6           &kp N7         &kp N8           &kp N9          &kp N0                      &kp BSLH
-&trans  &mt LALT LEFT_PARENTHESIS  &mt LCTRL LEFT_BRACKET  &mt LSHIFT MINUS  &mt LEFT_GUI PLUS  &kp LBRC    &kp RIGHT_BRACE  &mt LGUI LPAR  &mt LSHIFT LBKT  &mt LCTRL LBRC  &mt LALT RIGHT_PARENTHESIS  &trans
-&trans  &none                      &none                   &none             &none              &none       &kp MINUS        &kp EQUAL      &kp COMMA        &kp DOT         &kp FSLH                    &kp PLUS
-                                                           &trans            &trans             &trans      &trans           &trans         &trans
+&trans  &kp N1                      &kp N2                   &kp N3             &kp N4              &kp N5      &kp N6           &kp N7          &kp N8            &kp N9           &kp N0                       &trans
+&trans  &hml LALT LEFT_PARENTHESIS  &hml LCTRL LEFT_BRACKET  &hml LSHIFT MINUS  &hml LEFT_GUI PLUS  &kp LBRC    &kp RIGHT_BRACE  &hmr LGUI LPAR  &hmr LSHIFT LBKT  &hmr LCTRL LBRC  &hmr LALT RIGHT_PARENTHESIS  &trans
+&trans  &none                       &none                    &none              &none               &none       &kp MINUS        &kp EQUAL       &kp COMMA         &kp DOT          &kp FSLH                     &kp PLUS
+                                                             &trans             &trans              &trans      &trans           &trans          &trans
             >;
 
             label = "Math";
