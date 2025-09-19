@@ -12,8 +12,8 @@ layers:
   - I
   - O
   - P
+  - '|'
   - BACKSPACE
-  - '`'
   - A
   - {t: S, h: LCTRL}
   - {t: D, h: LSHIFT}
@@ -36,7 +36,7 @@ layers:
   - ','
   - .
   - /
-  - ''
+  - \
   - LALT
   - Math
   - ENTER
@@ -76,7 +76,7 @@ layers:
   - '%'
   - ^
   - '&'
-  - '*'
+  - {t: '*', s: <}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
@@ -177,7 +177,7 @@ combos:
   k: ESC
 - p: [9, 10]
   k: {t: default, h: toggle}
-- p: [4, 16]
-  k: '|'
-- p: [26, 27, 28]
+- p: [27, 28]
+  k: DELETE
+- p: [15, 20]
   k: '&caps_word'
