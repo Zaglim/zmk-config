@@ -175,9 +175,8 @@ layers:
 combos:
 - p: [1, 2]
   k: ESC
-- p: [9, 10]
-  k: {t: default, h: toggle}
-- p: [27, 28]
+- p: [16, 17]
   k: DELETE
 - p: [15, 20]
   k: '&caps_word'
+  l: [default]
