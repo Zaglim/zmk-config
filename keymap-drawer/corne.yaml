@@ -12,18 +12,18 @@ layers:
   - I
   - O
   - P
-  - '|'
+  - \
   - BACKSPACE
-  - {t: A, h: LSHIFT}
+  - A
   - {t: S, h: LCTRL}
-  - {t: D, h: Math}
+  - {t: D, h: LSHFT}
   - {t: F, h: LEFT GUI}
   - G
   - H
   - {t: J, h: LEFT GUI}
-  - {t: K, h: Math}
+  - {t: K, h: LSHIFT}
   - {t: L, h: LCTRL}
-  - {t: ;, h: LSHIFT}
+  - ;
   - ''''
   - {t: function, h: sticky}
   - Z
@@ -36,13 +36,13 @@ layers:
   - ','
   - .
   - /
-  - \
+  - ''
   - LALT
-  - '`'
+  - {t: Math, h: sticky}
   - ENTER
   - NAV
   - {t: SPACE, s: _}
-  - {t: function, h: sticky}
+  - RALT
   Math:
   - {t: ▽, type: trans}
   - '1'
@@ -55,25 +55,25 @@ layers:
   - '8'
   - '9'
   - '0'
+  - '|'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '=', h: LSHIFT}
-  - {t: '[', h: LCTRL}
-  - {t: (, type: held}
-  - {t: '{', h: LEFT GUI}
-  - '-'
-  - +
-  - {t: '}', h: LGUI}
-  - )
+  - ''
+  - LCTRL
+  - LSHIFT
+  - {t: '-', h: LEFT GUI}
+  - ''
+  - ''
+  - {t: +, h: LGUI}
+  - '['
   - {t: ']', h: LCTRL}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ^
   - '&'
   - {t: '*', s: <}
@@ -81,7 +81,7 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -94,17 +94,17 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - PAGE UP
   - UP
+  - PAGE DOWN
   - ''
-  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
+  - PIP
   - HOME
   - LEFT
   - DOWN
@@ -116,12 +116,12 @@ layers:
   - VOL UP
   - COPY
   - PASTE
-  - ''
-  - PG UP
-  - ''
+  - INS
   - ''
   - ''
-  - PAGE DOWN
+  - ''
+  - ''
+  - ''
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -141,7 +141,7 @@ layers:
   - F8
   - F9
   - F10
-  - DELETE
+  - ''
   - ''
   - F11
   - F12
