@@ -25,7 +25,7 @@ layers:
   - {t: L, h: LCTRL}
   - ;
   - ''''
-  - {t: function, h: sticky}
+  - ''
   - Z
   - X
   - C
@@ -154,16 +154,16 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - ''
   - ''
   - ''
   - ''
   - ''
   - '&bootloader'
   - ''
-  - ''
-  - ''
-  - ''
+  - {type: held}
+  - {type: held}
+  - {type: held}
   - ''
   - ''
   - ''
@@ -180,3 +180,5 @@ combos:
 - p: [15, 20]
   k: '&caps_word'
   l: [default]
+- p: [31, 32, 33]
+  k: {t: function, h: sticky}
