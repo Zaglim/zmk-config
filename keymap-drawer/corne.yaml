@@ -14,16 +14,16 @@ layers:
   - P
   - '|'
   - BACKSPACE
-  - A
+  - {t: A, h: LSHIFT}
   - {t: S, h: LCTRL}
-  - {t: D, h: LSHIFT}
+  - {t: D, h: Math}
   - {t: F, h: LEFT GUI}
   - G
   - H
   - {t: J, h: LEFT GUI}
-  - {t: K, h: LSHIFT}
+  - {t: K, h: Math}
   - {t: L, h: LCTRL}
-  - ;
+  - {t: ;, h: LSHIFT}
   - ''''
   - {t: function, h: sticky}
   - Z
@@ -38,7 +38,7 @@ layers:
   - /
   - \
   - LALT
-  - Math
+  - '`'
   - ENTER
   - NAV
   - {t: SPACE, s: _}
@@ -57,14 +57,14 @@ layers:
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '='
+  - {t: '=', h: LSHIFT}
   - {t: '[', h: LCTRL}
-  - {t: (, h: LSHIFT}
+  - {t: (, type: held}
   - {t: '{', h: LEFT GUI}
   - '-'
   - +
   - {t: '}', h: LGUI}
-  - {t: ), h: LSHIFT}
+  - )
   - {t: ']', h: LCTRL}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -81,7 +81,7 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
