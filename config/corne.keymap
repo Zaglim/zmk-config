@@ -24,10 +24,10 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_ESC {
+        combo_gresc {
             timeout-ms = <50>;
             key-positions = <1 2>; // above resting left pinky and ring finger
-            bindings = <&kp ESC>;
+            bindings = <&gresc>;
         };
 
         combo_delete {
@@ -38,13 +38,43 @@
 
         combo_caps_word {
             bindings = <&caps_word>;
-            key-positions = <15 20>;
+            key-positions = <16 19>;
             layers = <0>;
         };
 
         combo_sticky_func_layer {
-            bindings = <&sl 3>;
+            bindings = <&sl 2>;
             key-positions = <31 32 33>;
+        };
+
+        combo_bspc {
+            bindings = <&none>;
+            key-positions = <27 26>;
+        };
+
+        combo_quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <9 8>;
+        };
+
+        como_toggle_matmov {
+            bindings = <&tog 1>;
+            key-positions = <30 31 32>;
+        };
+
+        combo_minus {
+            bindings = <&kp MINUS>;
+            key-positions = <4 3>;
+        };
+
+        combo_plus {
+            bindings = <&kp PLUS>;
+            key-positions = <7 6>;
+        };
+
+        combo_equals {
+            bindings = <&kp EQUAL>;
+            key-positions = <8 7>;
         };
     };
 
@@ -99,12 +129,32 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        nh_hml: no_hold_undecided_hml {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <140>;
+            bindings = <&kp>, <&kp>;
+
+            label = "NH_HML";
+        };
+
+        nh_hmr: no_hold_undecided_hmr {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <140>;
+            bindings = <&kp>, <&kp>;
+
+            label = "NH_HMR";
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        DFLT {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -112,40 +162,27 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB        &kp Q  &kp W         &kp E         &kp R            &kp T        &kp Y  &kp U            &kp I          &kp O         &kp P          &kp BACKSLASH
-&kp BACKSPACE  &kp A  &hml LCTRL S  &hml LSHFT D  &hml LEFT_GUI F  &kp G        &kp H  &hmr LEFT_GUI J  &hmr LSHIFT K  &hmr LCTRL L  &kp SEMICOLON  &kp SINGLE_QUOTE
-&none          &kp Z  &kp X         &kp C         &kp V            &kp B        &kp N  &kp M            &kp COMMA      &kp DOT       &kp FSLH       &none
-                                    &kp LALT      &sl 1            &kp ENTER    &mo 2  &under_space     &kp RALT
+&kp TAB  &kp Q           &kp W         &kp E          &kp R        &kp T        &kp Y  &kp U         &kp I          &kp O        &kp P                   &none
+&none    &nh_hml LALT A  &hml LCTRL S  &hml LSHIFT D  &hml LGUI F  &kp G        &kp H  &hmr LGUI J   &hmr LSHIFT K  &hmr LGUI L  &nh_hmr LGUI SEMICOLON  &none
+&none    &kp Z           &kp X         &kp C          &kp V        &kp B        &kp N  &kp M         &kp COMMA      &kp DOT      &kp FSLH                &none
+                                       &none          &none        &kp ENTER    &sl 1  &under_space  &none
             >;
         };
 
-        math_layer {
+        MATNAV {
             bindings = <
-&trans  &kp N1  &kp N2     &kp N3      &kp N4               &kp N5    &kp N6     &kp N7          &kp N8            &kp N9                    &kp N0  &kp PIPE
-&trans  &none   &kp LCTRL  &kp LSHIFT  &hml LEFT_GUI MINUS  &none     &none      &hmr LGUI PLUS  &kp LEFT_BRACKET  &hmr LCTRL RIGHT_BRACKET  &trans  &trans
-&trans  &none   &none      &none       &none                &none     &kp CARET  &kp EQUAL       &trans            &trans                    &trans  &none
-                           &trans      &trans               &trans    &trans     &trans          &trans
+&trans  &kp LEFT_BRACKET  &kp N5         &kp N6          &kp N7        &kp RIGHT_BRACKET    &kp HOME  &kp PAGE_UP     &kp UP            &kp PAGE_DOWN     &kp END  &trans
+&trans  &nh_hml LALT N8   &hml LCTRL N9  &hml LSHIFT N0  &hml LGUI N1  &kp EQUAL            &none     &hmr LGUI LEFT  &hmr LSHIFT DOWN  &hmr LCTRL RIGHT  &trans   &trans
+&trans  &none             &kp N2         &kp N3          &kp N4        &kp BACKSLASH        &none     &none           &trans            &trans            &trans   &trans
+                                         &trans          &trans        &trans               &trans    &trans          &trans
             >;
-
-            label = "Math";
         };
 
-        navigation_layer {
+        FUNC {
             bindings = <
-&trans  &none         &none         &none       &none        &none        &none     &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &none    &trans
-&trans  &trans        &trans        &trans      &trans       &kp C_PIP    &kp HOME  &kp LEFT     &kp DOWN  &kp RIGHT      &kp END  &none
-&trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_COPY  &kp K_PASTE  &kp INS      &none     &none        &none     &none          &none    &none
-                                    &trans      &trans       &trans       &trans    &trans       &trans
-            >;
-
-            label = "NAV";
-        };
-
-        function_layer {
-            bindings = <
-&none  &kp F1   &kp F2       &kp F3          &kp F4  &kp F5         &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none
-&none  &kp F11  &kp F12      &studio_unlock  &none   &sys_reset     &none   &none   &none   &none   &none    &none
-&none  &none    &kp C_SLEEP  &none           &none   &bootloader    &none   &none   &none   &none   &none    &none
+&none  &kp F1   &kp F2       &kp F3          &kp F4  &kp F5         &kp F6  &kp F7  &kp F8      &kp F9  &kp F10  &none
+&none  &kp F11  &kp F12      &studio_unlock  &none   &sys_reset     &none   &none   &kp INSERT  &none   &none    &none
+&none  &none    &kp C_SLEEP  &none           &none   &bootloader    &none   &none   &none       &none   &none    &none
                              &trans          &trans  &trans         &trans  &trans  &trans
             >;
         };
