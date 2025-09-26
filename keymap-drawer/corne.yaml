@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: corne}
 layers:
-  default:
+  DFLT:
   - TAB
   - Q
   - W
@@ -12,19 +12,19 @@ layers:
   - I
   - O
   - P
-  - \
-  - BACKSPACE
-  - A
+  - ''
+  - ''
+  - {t: A, h: LALT}
   - {t: S, h: LCTRL}
-  - {t: D, h: LSHFT}
-  - {t: F, h: LEFT GUI}
+  - {t: D, h: LSHIFT}
+  - {t: F, h: LGUI}
   - G
   - H
-  - {t: J, h: LEFT GUI}
+  - {t: J, h: LGUI}
   - {t: K, h: LSHIFT}
-  - {t: L, h: LCTRL}
-  - ;
-  - ''''
+  - {t: L, h: LGUI}
+  - {t: ;, h: LGUI}
+  - ''
   - ''
   - Z
   - X
@@ -37,99 +37,56 @@ layers:
   - .
   - /
   - ''
-  - LALT
-  - {t: Math, h: sticky}
+  - ''
+  - ''
   - ENTER
-  - NAV
+  - {t: MATNAV, h: sticky}
   - {t: SPACE, s: _}
-  - RALT
-  Math:
+  - ''
+  MATNAV:
   - {t: ▽, type: trans}
-  - '1'
-  - '2'
-  - '3'
-  - '4'
+  - '['
   - '5'
   - '6'
   - '7'
-  - '8'
-  - '9'
-  - '0'
-  - '|'
-  - {t: ▽, type: trans}
-  - ''
-  - LCTRL
-  - LSHIFT
-  - {t: '-', h: LEFT GUI}
-  - ''
-  - ''
-  - {t: +, h: LGUI}
-  - '['
-  - {t: ']', h: LCTRL}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ^
-  - '='
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  NAV:
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - ']'
+  - HOME
   - PAGE UP
   - UP
   - PAGE DOWN
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PIP
-  - HOME
-  - LEFT
-  - DOWN
-  - RIGHT
   - END
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '8', h: LALT}
+  - {t: '9', h: LCTRL}
+  - {t: '0', h: LSHIFT}
+  - {t: '1', h: LGUI}
+  - '='
+  - ''
+  - {t: LEFT, h: LGUI}
+  - {t: DOWN, h: LSHIFT}
+  - {t: RIGHT, h: LCTRL}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - '2'
+  - '3'
+  - '4'
+  - \
+  - ''
   - ''
   - {t: ▽, type: trans}
-  - VOL DN
-  - VOL UP
-  - COPY
-  - PASTE
-  - INS
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  function:
+  '3':
   - ''
   - F1
   - F2
@@ -150,7 +107,7 @@ layers:
   - '&sys_reset'
   - ''
   - ''
-  - ''
+  - INSERT
   - ''
   - ''
   - ''
@@ -174,11 +131,23 @@ layers:
   - {t: ▽, type: trans}
 combos:
 - p: [1, 2]
-  k: ESC
+  k: {t: ESC, s: '`'}
 - p: [16, 17]
   k: DELETE
-- p: [15, 20]
+- p: [16, 19]
   k: '&caps_word'
-  l: [default]
+  l: [DFLT]
 - p: [31, 32, 33]
-  k: {t: function, h: sticky}
+  k: {t: '3', h: sticky}
+- p: [27, 26]
+  k: ''
+- p: [9, 8]
+  k: ''''
+- p: [30, 31, 32]
+  k: {t: MATNAV, h: toggle}
+- p: [4, 3]
+  k: '-'
+- p: [7, 6]
+  k: +
+- p: [8, 7]
+  k: '='
