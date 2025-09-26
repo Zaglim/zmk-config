@@ -22,8 +22,8 @@ layers:
   - H
   - {t: J, h: LGUI}
   - {t: K, h: LSHIFT}
-  - {t: L, h: LGUI}
-  - {t: ;, h: LGUI}
+  - {t: L, h: LCTRL}
+  - {t: ;, h: LALT}
   - ''
   - ''
   - Z
@@ -134,13 +134,13 @@ combos:
   k: {t: ESC, s: '`'}
 - p: [16, 17]
   k: DELETE
-- p: [16, 19]
+- p: [15, 20]
   k: '&caps_word'
   l: [DFLT]
 - p: [31, 32, 33]
   k: {t: '3', h: sticky}
-- p: [27, 26]
-  k: ''
+- p: [26, 27]
+  k: BSPC
 - p: [9, 8]
   k: ''''
 - p: [30, 31, 32]

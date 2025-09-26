@@ -218,12 +218,12 @@ path.combo {
 <g transform="translate(700, 91)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">L</text>
-<text x="0" y="24" class="key hold">LGUI</text>
+<text x="0" y="24" class="key hold">LCTRL</text>
 </g>
 <g transform="translate(756, 105)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">;</text>
-<text x="0" y="24" class="key hold">LGUI</text>
+<text x="0" y="24" class="key hold">LALT</text>
 </g>
 <g transform="translate(812, 105)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -308,10 +308,10 @@ path.combo {
 <text x="280" y="94" class="combo tap">DELETE</text>
 </g>
 <g class="combo combopos-2">
-<path d="M420,91 l-149,0" class="combo"/>
-<path d="M420,91 l149,0" class="combo"/>
-<rect rx="6" ry="6" x="406" y="78" width="28" height="26" class="combo"/>
-<text x="420" y="91" class="combo tap"><tspan style="font-size: 70%">&amp;caps_word</tspan></text>
+<path d="M420,84 l-205,0" class="combo"/>
+<path d="M420,84 l205,0" class="combo"/>
+<rect rx="6" ry="6" x="406" y="71" width="28" height="26" class="combo"/>
+<text x="420" y="84" class="combo tap"><tspan style="font-size: 70%">&amp;caps_word</tspan></text>
 </g>
 <g class="combo combopos-3">
 <path d="M644,145 l-37,2" class="combo"/>
@@ -323,6 +323,7 @@ path.combo {
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
+<text x="168" y="144" class="combo tap">BSPC</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="658" y="18" width="28" height="26" class="combo"/>
@@ -547,6 +548,7 @@ path.combo {
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
+<text x="168" y="144" class="combo tap">BSPC</text>
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="658" y="18" width="28" height="26" class="combo"/>
@@ -745,6 +747,7 @@ path.combo {
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
+<text x="168" y="144" class="combo tap">BSPC</text>
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="658" y="18" width="28" height="26" class="combo"/>
