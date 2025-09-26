@@ -20,6 +20,11 @@
 #define NAVI 2
 #define FUNC 3
 
+&gresc {
+    keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+    mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
