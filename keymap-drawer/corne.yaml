@@ -38,52 +38,95 @@ layers:
   - /
   - ''
   - ''
-  - ''
+  - NAV
   - ENTER
-  - {t: MATNAV, h: sticky}
+  - {t: '1', h: sticky}
   - {t: SPACE, s: _}
   - ''
-  MATNAV:
+  '1':
   - {t: ▽, type: trans}
   - '['
   - '5'
   - '6'
   - '7'
   - ']'
-  - HOME
-  - PAGE UP
-  - UP
-  - PAGE DOWN
-  - END
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '8', h: LALT}
-  - {t: '9', h: LCTRL}
-  - {t: '0', h: LSHIFT}
-  - {t: '1', h: LGUI}
+  - '8'
+  - '9'
+  - '0'
+  - '1'
   - '='
   - ''
-  - {t: LEFT, h: LGUI}
-  - {t: DOWN, h: LSHIFT}
-  - {t: RIGHT, h: LCTRL}
+  - LGUI
+  - LSHIFT
+  - LCTRL
+  - LALT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
+  - ''''
   - '2'
   - '3'
   - '4'
   - \
   - ''
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  NAV:
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - PAGE UP
+  - UP
+  - PAGE DOWN
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LALT
+  - LCTRL
+  - LSHIFT
+  - LGUI
+  - ''
+  - HOME
+  - LEFT
+  - DOWN
+  - RIGHT
+  - END
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '3':
@@ -144,7 +187,7 @@ combos:
 - p: [9, 8]
   k: ''''
 - p: [30, 31, 32]
-  k: {t: MATNAV, h: toggle}
+  k: {t: '1', h: toggle}
 - p: [4, 3]
   k: '-'
 - p: [7, 6]
