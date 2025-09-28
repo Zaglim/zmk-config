@@ -40,10 +40,10 @@ layers:
   - ''
   - ''
   - {t: RETURN, h: NAV}
-  - {t: '1', h: sticky}
+  - {t: MATH, h: sticky}
   - {t: SPACE, s: _}
   - ''
-  '1':
+  MATH:
   - {t: ▽, type: trans}
   - ''
   - '5'
@@ -129,7 +129,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '3':
+  FUNC:
   - ''
   - '&bootloader'
   - F5
@@ -181,13 +181,13 @@ combos:
   k: '&caps_word'
   l: [DFLT]
 - p: [31, 32, 33]
-  k: {t: '3', h: sticky}
+  k: {t: FUNC, h: sticky}
 - p: [26, 27]
   k: BSPC
 - p: [9, 8]
   k: ''''
 - p: [30, 31, 32]
-  k: {t: '1', h: toggle}
+  k: {t: MATH, h: toggle}
 - p: [7, 6]
   k: +
 - p: [8, 7]
