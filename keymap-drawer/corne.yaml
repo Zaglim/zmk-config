@@ -38,34 +38,34 @@ layers:
   - /
   - ''
   - ''
-  - NAV
-  - ENTER
+  - ''
+  - {t: RETURN, h: NAV}
   - {t: '1', h: sticky}
   - {t: SPACE, s: _}
   - ''
   '1':
   - {t: ▽, type: trans}
-  - '['
+  - ''
   - '5'
   - '6'
   - '7'
   - ']'
   - ''
+  - '&'
+  - '*'
   - ''
-  - ''
-  - ''
-  - ''
+  - '|'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '8'
+  - KP 8
   - '9'
   - '0'
   - '1'
-  - '='
   - ''
-  - LGUI
-  - LSHIFT
-  - LCTRL
+  - ''
+  - {t: '{', h: LGUI}
+  - {t: (, h: LSHIFT}
+  - {t: '[', h: LCTRL}
   - LALT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -74,11 +74,11 @@ layers:
   - '3'
   - '4'
   - \
+  - \
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -93,7 +93,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - TAB
   - PAGE UP
   - UP
   - PAGE DOWN
@@ -124,42 +124,42 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '3':
   - ''
-  - F1
-  - F2
-  - F3
-  - F4
+  - '&bootloader'
   - F5
   - F6
   - F7
-  - F8
-  - F9
   - F10
-  - ''
-  - ''
-  - F11
-  - F12
-  - '&studio_unlock'
-  - ''
-  - '&sys_reset'
   - ''
   - ''
   - INSERT
   - ''
+  - '&bootloader'
   - ''
   - ''
+  - {t: F8, h: LALT}
+  - {t: F9, h: LCTRL}
+  - LSHIFT
+  - {t: F1, h: LGUI}
+  - F11
+  - ''
+  - LGUI
+  - LSHIFT
+  - LCTRL
+  - LALT
   - ''
   - ''
   - SLEEP
-  - ''
-  - ''
-  - '&bootloader'
+  - F2
+  - F3
+  - F4
+  - F12
   - ''
   - {type: held}
   - {type: held}
