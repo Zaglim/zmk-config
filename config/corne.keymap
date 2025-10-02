@@ -37,7 +37,7 @@
 
         combo_delete {
             bindings = <&kp DELETE>;
-            key-positions = <16 17>;
+            key-positions = <16 21>;
         };
 
         combo_caps_word {
@@ -53,11 +53,11 @@
 
         combo_bspc {
             bindings = <&kp BSPC>;
-            key-positions = <26 27>;
+            key-positions = <14 19>;
         };
 
-        combo_quote {
-            bindings = <&kp SINGLE_QUOTE>;
+        combo_minus {
+            bindings = <&kp MINUS>;
             key-positions = <9 8>;
             timeout-ms = <PRIMARY_COMBO_TIMEOUT_MS>;
             require-prior-idle-ms = <PRIMARY_COMBO_REQUIRE_IDLE_TIMEOUT>;
