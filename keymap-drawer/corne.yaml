@@ -175,17 +175,17 @@ layers:
 combos:
 - p: [1, 2]
   k: {t: ESC, s: '`'}
-- p: [16, 17]
+- p: [16, 21]
   k: DELETE
 - p: [15, 20]
   k: '&caps_word'
   l: [DFLT]
 - p: [31, 32, 33]
   k: {t: FUNC, h: sticky}
-- p: [26, 27]
+- p: [14, 19]
   k: BSPC
 - p: [9, 8]
-  k: ''''
+  k: '-'
 - p: [30, 31, 32]
   k: {t: MATH, h: toggle}
 - p: [7, 6]
