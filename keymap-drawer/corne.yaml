@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   DFLT:
-  - TAB
+  - ''
   - Q
   - W
   - E
@@ -57,7 +57,7 @@ layers:
   - '|'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - KP 8
+  - '8'
   - '9'
   - '0'
   - '1'
