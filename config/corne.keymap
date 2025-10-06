@@ -60,12 +60,8 @@
 
         combo_toggle_matmov {
             bindings = <&tog 1>;
-            key-positions = <30 31 32>;
-        };
-
-        combo_toggle_matmov {
-            bindings = <&tog 1>;
             key-positions = <30 39>;
+            layers = <0 1>;
         };
 
         combo_equals {
