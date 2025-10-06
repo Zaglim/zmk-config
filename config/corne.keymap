@@ -24,6 +24,8 @@
     mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
 };
 
+&sl { ignore-modifiers; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -185,9 +187,9 @@
 
         MATH {
             bindings = <
-&trans  &none             &kp N5  &kp N6  &kp N7  &kp RIGHT_BRACKET    &none     &kp AMPERSAND         &kp ASTERISK                  &kp MINUS                &kp PIPE  &trans
+&trans  &kp LEFT_BRACKET  &kp N5  &kp N6  &kp N7  &kp RIGHT_BRACKET    &none     &kp AMPERSAND         &kp ASTERISK                  &kp MINUS                &kp PIPE  &trans
 &trans  &kp N8            &kp N9  &kp N0  &kp N1  &none                &none     &hmr LGUI LEFT_BRACE  &hmr LSHIFT LEFT_PARENTHESIS  &hmr LCTRL LEFT_BRACKET  &kp LALT  &trans
-&trans  &kp SINGLE_QUOTE  &kp N2  &kp N3  &kp N4  &none                &kp BSLH  &none                 &trans                        &trans                   &trans    &trans
+&trans  &kp SINGLE_QUOTE  &kp N2  &kp N3  &kp N4  &kp BACKSLASH        &kp BSLH  &none                 &trans                        &trans                   &trans    &trans
                                   &trans  &trans  &trans               &trans    &trans                &trans
             >;
         };
