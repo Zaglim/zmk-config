@@ -45,11 +45,11 @@ layers:
   - ''
   MATH:
   - {t: ▽, type: trans}
-  - '['
+  - '{'
   - '5'
   - '6'
   - '7'
-  - ']'
+  - '}'
   - ''
   - '&'
   - '*'
@@ -57,11 +57,11 @@ layers:
   - '|'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '8'
+  - '['
   - '9'
   - '0'
   - '1'
-  - ''
+  - ']'
   - ''
   - {t: '{', h: LGUI}
   - {t: (, h: LSHIFT}
@@ -81,7 +81,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '8'
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
