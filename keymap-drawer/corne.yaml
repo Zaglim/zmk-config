@@ -192,3 +192,8 @@ combos:
   k: +
 - p: [8, 7]
   k: '='
+- p: [5, 17]
+  k: VOLUME UP
+  l: [DFLT]
+- p: [17, 29]
+  k: VOLUME DOWN

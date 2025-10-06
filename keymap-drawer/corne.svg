@@ -350,6 +350,18 @@ path.combo {
 <rect rx="6" ry="6" x="602" y="18" width="28" height="26" class="combo"/>
 <text x="616" y="32" class="combo tap">=</text>
 </g>
+<g class="combo combopos-9">
+<rect rx="6" ry="6" x="294" y="57" width="28" height="26" class="combo"/>
+<text x="308" y="70" class="combo tap">
+<tspan x="308" dy="-0.6em">VOLUME</tspan><tspan x="308" dy="1.2em">UP</tspan>
+</text>
+</g>
+<g class="combo combopos-10">
+<rect rx="6" ry="6" x="294" y="113" width="28" height="26" class="combo"/>
+<text x="308" y="126" class="combo tap">
+<tspan x="308" dy="-0.6em">VOLUME</tspan><tspan x="308" dy="1.2em">DOWN</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 331)" class="layer-MATH">
@@ -566,6 +578,12 @@ path.combo {
 <rect rx="6" ry="6" x="602" y="18" width="28" height="26" class="combo"/>
 <text x="616" y="32" class="combo tap">=</text>
 </g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="294" y="113" width="28" height="26" class="combo"/>
+<text x="308" y="126" class="combo tap">
+<tspan x="308" dy="-0.6em">VOLUME</tspan><tspan x="308" dy="1.2em">DOWN</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 661)" class="layer-NAV">
@@ -769,6 +787,12 @@ path.combo {
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="602" y="18" width="28" height="26" class="combo"/>
 <text x="616" y="32" class="combo tap">=</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="294" y="113" width="28" height="26" class="combo"/>
+<text x="308" y="126" class="combo tap">
+<tspan x="308" dy="-0.6em">VOLUME</tspan><tspan x="308" dy="1.2em">DOWN</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -975,6 +999,12 @@ path.combo {
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="602" y="18" width="28" height="26" class="combo"/>
 <text x="616" y="32" class="combo tap">=</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="294" y="113" width="28" height="26" class="combo"/>
+<text x="308" y="126" class="combo tap">
+<tspan x="308" dy="-0.6em">VOLUME</tspan><tspan x="308" dy="1.2em">DOWN</tspan>
+</text>
 </g>
 </g>
 </g>
