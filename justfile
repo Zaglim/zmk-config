@@ -1,8 +1,9 @@
-alias p := pull
-alias v := view
+import 'draw.just'
 
-view:
-    xdg-open keymap-drawer/corne.svg
+alias p := pull
+
+default:
+    just pull draw view
 
 pull:
     git pull --rebase
