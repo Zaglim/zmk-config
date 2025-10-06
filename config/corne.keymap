@@ -83,6 +83,17 @@
             timeout-ms = <PRIMARY_COMBO_TIMEOUT_MS>;
             require-prior-idle-ms = <PRIMARY_COMBO_REQUIRE_IDLE_TIMEOUT>;
         };
+
+        Vol+ {
+            bindings = <&kp C_VOLUME_UP>;
+            key-positions = <5 17>;
+            layers = <0>;
+        };
+
+        Vol- {
+            bindings = <&kp C_VOLUME_DOWN>;
+            key-positions = <17 29>;
+        };
     };
 
     behaviors {
