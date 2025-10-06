@@ -63,11 +63,9 @@
             key-positions = <30 31 32>;
         };
 
-        combo_plus {
-            bindings = <&kp PLUS>;
-            key-positions = <7 6>;
-            timeout-ms = <PRIMARY_COMBO_TIMEOUT_MS>;
-            require-prior-idle-ms = <PRIMARY_COMBO_REQUIRE_IDLE_TIMEOUT>;
+        combo_toggle_matmov {
+            bindings = <&tog 1>;
+            key-positions = <30 39>;
         };
 
         combo_equals {
