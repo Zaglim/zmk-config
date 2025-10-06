@@ -184,10 +184,9 @@ combos:
   k: {t: FUNC, h: sticky}
 - p: [14, 19]
   k: BSPC
-- p: [30, 31, 32]
-  k: {t: MATH, h: toggle}
 - p: [30, 39]
   k: {t: MATH, h: toggle}
+  l: [DFLT, MATH]
 - p: [8, 7]
   k: '='
 - p: [9, 8]
