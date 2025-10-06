@@ -186,8 +186,8 @@ combos:
   k: BSPC
 - p: [30, 31, 32]
   k: {t: MATH, h: toggle}
-- p: [7, 6]
-  k: +
+- p: [30, 39]
+  k: {t: MATH, h: toggle}
 - p: [8, 7]
   k: '='
 - p: [9, 8]
