@@ -58,7 +58,7 @@
             key-positions = <14 19>;
         };
 
-        combo_toggle_matmov {
+        combo_toggle_math_layer {
             bindings = <&tog 1>;
             key-positions = <30 39>;
             layers = <0 1>;
@@ -87,6 +87,11 @@
         vol_down {
             bindings = <&kp C_VOLUME_DOWN>;
             key-positions = <17 29>;
+        };
+
+        combo_toggle_nav_layer {
+            bindings = <&tog 2>;
+            key-positions = <29 38>;
         };
     };
 
