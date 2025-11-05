@@ -196,3 +196,5 @@ combos:
   l: [DFLT]
 - p: [17, 29]
   k: VOLUME DOWN
+- p: [29, 38]
+  k: {t: NAV, h: toggle}
