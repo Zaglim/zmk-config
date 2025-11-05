@@ -35,13 +35,13 @@ layers:
   - M
   - ','
   - .
-  - /
+  - {t: /, s: \}
   - ''
   - ''
-  - ''
+  - '`'
   - {t: RETURN, h: NAV}
   - {t: MATH, h: sticky}
-  - {t: SPACE, s: _}
+  - SPACE
   - ''
   MATH:
   - {t: ▽, type: trans}
@@ -74,7 +74,7 @@ layers:
   - '3'
   - '4'
   - \
-  - \
+  - ''
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -174,7 +174,7 @@ layers:
   - {t: ▽, type: trans}
 combos:
 - p: [1, 2]
-  k: {t: ESC, s: '`'}
+  k: ESC
 - p: [16, 21]
   k: DELETE
 - p: [15, 20]
