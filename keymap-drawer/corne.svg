@@ -360,6 +360,18 @@ path.combo {
 <rect rx="6" ry="6" x="658" y="38" width="28" height="26" class="combo"/>
 <text x="672" y="51" class="combo tap">DELETE</text>
 </g>
+<g class="combo combopos-11">
+<path d="M812,105 l0,-37" class="combo"/>
+<path d="M812,105 l0,37" class="combo"/>
+<rect rx="6" ry="6" x="798" y="92" width="28" height="26" class="combo"/>
+<text x="812" y="105" class="combo tap"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
+</g>
+<g class="combo combopos-12">
+<path d="M28,105 l0,-37" class="combo"/>
+<path d="M28,105 l0,37" class="combo"/>
+<rect rx="6" ry="6" x="14" y="92" width="28" height="26" class="combo"/>
+<text x="28" y="105" class="combo tap"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 331)" class="layer-MATH">
@@ -579,6 +591,18 @@ path.combo {
 <rect rx="6" ry="6" x="658" y="38" width="28" height="26" class="combo"/>
 <text x="672" y="51" class="combo tap">DELETE</text>
 </g>
+<g class="combo combopos-9">
+<path d="M812,105 l0,-37" class="combo"/>
+<path d="M812,105 l0,37" class="combo"/>
+<rect rx="6" ry="6" x="798" y="92" width="28" height="26" class="combo"/>
+<text x="812" y="105" class="combo tap"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
+</g>
+<g class="combo combopos-10">
+<path d="M28,105 l0,-37" class="combo"/>
+<path d="M28,105 l0,37" class="combo"/>
+<rect rx="6" ry="6" x="14" y="92" width="28" height="26" class="combo"/>
+<text x="28" y="105" class="combo tap"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 661)" class="layer-NAV">
@@ -779,6 +803,18 @@ path.combo {
 <path d="M672,51 l-67,32" class="combo"/>
 <rect rx="6" ry="6" x="658" y="38" width="28" height="26" class="combo"/>
 <text x="672" y="51" class="combo tap">DELETE</text>
+</g>
+<g class="combo combopos-8">
+<path d="M812,105 l0,-37" class="combo"/>
+<path d="M812,105 l0,37" class="combo"/>
+<rect rx="6" ry="6" x="798" y="92" width="28" height="26" class="combo"/>
+<text x="812" y="105" class="combo tap"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
+</g>
+<g class="combo combopos-9">
+<path d="M28,105 l0,-37" class="combo"/>
+<path d="M28,105 l0,37" class="combo"/>
+<rect rx="6" ry="6" x="14" y="92" width="28" height="26" class="combo"/>
+<text x="28" y="105" class="combo tap"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
 </g>
 </g>
 </g>
@@ -982,6 +1018,18 @@ path.combo {
 <path d="M672,51 l-67,32" class="combo"/>
 <rect rx="6" ry="6" x="658" y="38" width="28" height="26" class="combo"/>
 <text x="672" y="51" class="combo tap">DELETE</text>
+</g>
+<g class="combo combopos-8">
+<path d="M812,105 l0,-37" class="combo"/>
+<path d="M812,105 l0,37" class="combo"/>
+<rect rx="6" ry="6" x="798" y="92" width="28" height="26" class="combo"/>
+<text x="812" y="105" class="combo tap"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
+</g>
+<g class="combo combopos-9">
+<path d="M28,105 l0,-37" class="combo"/>
+<path d="M28,105 l0,37" class="combo"/>
+<rect rx="6" ry="6" x="14" y="92" width="28" height="26" class="combo"/>
+<text x="28" y="105" class="combo tap"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
 </g>
 </g>
 </g>

@@ -198,3 +198,7 @@ combos:
   k: BACKSPACE
 - p: [10, 9, 8, 19]
   k: DELETE
+- p: [11, 35, 23]
+  k: '&bootloader'
+- p: [0, 12, 24]
+  k: '&bootloader'
