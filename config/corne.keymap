@@ -93,6 +93,16 @@
             bindings = <&kp DELETE>;
             key-positions = <10 9 8 19>;
         };
+
+        bootload_right {
+            bindings = <&bootloader>;
+            key-positions = <11 35 23>;
+        };
+
+        bootload_left {
+            bindings = <&bootloader>;
+            key-positions = <0 12 24>;
+        };
     };
 
     behaviors {
