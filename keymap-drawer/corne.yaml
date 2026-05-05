@@ -175,8 +175,6 @@ layers:
 combos:
 - p: [1, 2]
   k: ESC
-- p: [16, 21]
-  k: DELETE
 - p: [15, 20]
   k: '&caps_word'
   l: [DFLT]
@@ -198,3 +196,5 @@ combos:
   k: {t: NAV, h: toggle}
 - p: [26, 27]
   k: BACKSPACE
+- p: [10, 9, 8, 19]
+  k: DELETE
