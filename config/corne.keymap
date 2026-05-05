@@ -37,11 +37,6 @@
             timeout-ms = <PRIMARY_COMBO_TIMEOUT_MS>;
         };
 
-        combo_delete {
-            bindings = <&kp DELETE>;
-            key-positions = <16 21>;
-        };
-
         combo_caps_word {
             bindings = <&caps_word>;
             key-positions = <15 20>;
@@ -92,6 +87,11 @@
         combo_bspc {
             bindings = <&kp BACKSPACE>;
             key-positions = <26 27>;
+        };
+
+        combo_delete {
+            bindings = <&kp DELETE>;
+            key-positions = <10 9 8 19>;
         };
     };
 
