@@ -182,8 +182,6 @@ combos:
   l: [DFLT]
 - p: [31, 32, 33]
   k: {t: FUNC, h: sticky}
-- p: [14, 19]
-  k: BSPC
 - p: [30, 39]
   k: {t: MATH, h: toggle}
   l: [DFLT, MATH]
@@ -198,3 +196,5 @@ combos:
   k: VOLUME DOWN
 - p: [29, 38]
   k: {t: NAV, h: toggle}
+- p: [26, 27]
+  k: BACKSPACE
