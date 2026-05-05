@@ -1,6 +1,6 @@
 manifest:
   defaults:
-    revision: v0.3
+    revision: v0.3 # when changing zmk version, be sure to edit both here and in the .github/workflows/build.yml
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
@@ -8,7 +8,6 @@ manifest:
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     - name: zmk
-      revision: 0.3 # when changing zmk version, be sure to edit both here and in the .github/workflows/build.yml
       remote: zmkfirmware
       import: app/west.yml
   self:
